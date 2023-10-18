@@ -5,6 +5,7 @@ const productsRoute = require("./routes/products");
 
 //Middleware app.use
 app.use(cors());
+app.use(express.static("public"));
 
 const data = [
   { name: "Cris", email: "Cris email" },
