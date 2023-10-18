@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { getProductById, currency } from "home/products";
+import { useParams } from "react-router-dom";
 
 const PDPContent = () => {
-  const id = 2;
+  const { Id } = useParams();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    if (id) {
-      getProductById(id).then((product) => setProduct(product));
+    if (Id) {
+      getProductById(Id).then((product) => setProduct(product));
     } else {
       setProduct(null);
     }

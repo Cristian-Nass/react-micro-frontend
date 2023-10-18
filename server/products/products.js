@@ -4,8 +4,7 @@ const products = [
     name: "Wheel Spinner",
     price: 5.99,
     description: "A wheel fidget spinner that spins wheels",
-    image:
-      "https://lux-case.se/media/catalog/product/cache/473e2072a4aa8dcff30c6c0e89195f31/L/C/LCF32-01-069-1.jpg",
+    image: "http://localhost:8080/fidget-1.jpg",
     longDescription:
       "Our Wheel Spinner is fun, functional, and maybe just a little bit strange. It allows you to spin your wheels with ease-- making it great for stress relief or just entertainment. This fidget spinner is handcrafted using brass and then plated in gold or rose gold to ensure the finest quality spinning action, making it the best way to get your wheels moving.",
   },
