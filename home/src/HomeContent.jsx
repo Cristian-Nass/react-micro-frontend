@@ -13,7 +13,10 @@ const HomeContent = () => {
       {products.map((product) => (
         <div key={product.id}>
           <div>{product.name}</div>
-          <img src={product.image} alt={product.name} />
+          <div className='flex'>
+            <div className='flex-end'>{currency.format(product.price)}</div>
+          </div>
+          <div className='text-sm mt-4'>{product.description}</div>
         </div>
       ))}
     </div>
